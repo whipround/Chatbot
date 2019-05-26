@@ -1,0 +1,814 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "price",
+        "intent": "get_attri",
+        "entities": [
+
+        ]
+      },
+      {
+        "text": "quote",
+        "intent": "get_attri",
+        "entities": [
+
+        ]
+      },
+      {
+        "text": "volume and open",
+        "intent": "get_attri",
+        "entities": [
+
+        ]
+      },
+      {
+        "text": "I want to get the price of AMD",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "price",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "AMD",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "can you show me some infomation about TSLA",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 38,
+            "end": 42,
+            "value": "TSLA",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I want to known the volume and the price of tsla and goog",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "volume",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "value": "price",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "value": "tsla",
+            "entity": "stock_name"
+          },
+          {
+            "start": 53,
+            "end": 57,
+            "value": "goog",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for TSLA",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "TSLA",
+            "entity": "stock_name"
+          }
+        ]
+      },
+
+
+      {
+        "text": "cap",
+        "intent": "get_attri",
+        "entities": [
+            {
+            "start": 0,
+            "end": 3,
+            "value": "cap",
+            "entity": "stock_attri"
+            }
+        ]
+      },
+      {
+        "text": "capitalization",
+        "intent": "get_attri",
+        "entities": [
+            {
+            "start": 0,
+            "end": 14,
+            "value": "capitalization",
+            "entity": "stock_attri"
+            }
+        ]
+      },
+      {
+        "text": "price",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "price",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "quote",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "quote",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "volume",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "volume",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "open",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "open",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "close",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "close",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "earnings",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "earnings",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "dividends",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "dividends",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "volume and open",
+        "intent": "get_attri",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "volume",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "open",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "I want to get the price of AMD",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "price",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "AMD",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I am searching for the open of the GOOG",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "open",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "value": "GOOG",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the earnings of the QCOM",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "earnings",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "QCOM",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I want to known the volume of tsla",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "volume",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "value": "tsla",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "search for the price",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "price",
+            "entity": "stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "Can you show me some infomation about TSLA",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 38,
+            "end": 42,
+            "value": "TSLA",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I want to known the volume and the price of tsla and goog",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "volume",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "value": "price",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "value": "tsla",
+            "entity": "stock_name"
+          },
+          {
+            "start": 53,
+            "end": 57,
+            "value": "goog",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I want to known the cap and the open about tsla and jd",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "cap",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "open",
+            "entity": "stock_attri"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "value": "tsla",
+            "entity": "stock_name"
+          },
+          {
+            "start": 52,
+            "end": 54,
+            "value": "jd",
+            "entity": "stock_name"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for TSLA",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "TSLA",
+            "entity": "stock_name"
+          }
+        ]
+      },
+
+
+      {
+        "text": "i want to get the historical close price of TSLA from 2017-5-8 to 2017-6-8",
+        "intent": "get_history",
+        "entities": [
+          {
+            "start":44,
+            "end":49,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":29,
+              "end":40,
+              "value":"close",
+              "entity":"stock_attri"
+          },
+          {
+              "start":55,
+              "end":63,
+              "value":"2017-5-8",
+              "entity":"start_date"
+          },
+          {
+              "start":67,
+              "end":75,
+              "value":"2017-6-8",
+              "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "i want to get the historical close price of tesla from 2018-10-22 to 2018-11-22",
+        "intent": "get_history",
+        "entities": [
+          {
+            "start":44,
+            "end":49,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":29,
+              "end":40,
+              "value":"close",
+              "entity":"stock_attri"
+          },
+          {
+              "start":55,
+              "end":65,
+              "value":"2018-10-22",
+              "entity":"start_date"
+          },
+          {
+              "start":69,
+              "end":79,
+              "value":"2018-11-22",
+              "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "i want to get the historical close price of tesla from Oct 12 2017 to Jan 22 2018",
+        "intent": "get_history",
+        "entities": [
+          {
+            "start":44,
+            "end":49,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":29,
+              "end":40,
+              "value":"close",
+              "entity":"stock_attri"
+          },
+          {
+              "start":55,
+              "end":66,
+              "value":"2017-10-12",
+              "entity":"start_date"
+          },
+          {
+              "start":70,
+              "end":81,
+              "value":"2018-1-22",
+              "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "i want to get the historical close price of tesla from Oct 15 2017 to Oct 25 2018",
+        "intent": "get_history",
+        "entities": [
+          {
+            "start":44,
+            "end":49,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":29,
+              "end":40,
+              "value":"close",
+              "entity":"stock_attri"
+          },
+          {
+              "start":55,
+              "end":66,
+              "value":"2017-10-15",
+              "entity":"start_date"
+          },
+          {
+              "start":70,
+              "end":81,
+              "value":"2018-10-25",
+              "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "i want to get the historical close price of apple from 2018-10-22 to 2018-11-22",
+        "intent": "get_history",
+        "entities": [
+          {
+            "start":44,
+            "end":49,
+            "value":"AAPL",
+            "entity":"stock_name"
+          },
+          {
+              "start":29,
+              "end":40,
+              "value":"close",
+              "entity":"stock_attri"
+          },
+          {
+              "start":55,
+              "end":65,
+              "value":"2018-10-22",
+              "entity":"start_date"
+          },
+          {
+              "start":69,
+              "end":79,
+              "value":"2018-11-22",
+              "entity":"end_date"
+          }
+        ]
+      },
+
+      {
+        "text": "give me the historical data of TSLA and GOOG",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+            "start":31,
+            "end":35,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+            "start":40,
+            "end":44,
+            "value":"GOOG",
+            "entity":"stock_name"
+          }
+        ]
+      },
+      {
+        "text": "i would like to get the historical close price of TSLA",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+            "start":50,
+            "end":54,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":35,
+              "end":46,
+              "value":"close",
+              "entity":"stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "i want to get the historical close price of TSLA",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+            "start":44,
+            "end":48,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":29,
+              "end":40,
+              "value":"close",
+              "entity":"stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "i want to know the price of TSLA in the past few days",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+            "start":28,
+            "end":32,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":19,
+              "end":24,
+              "value":"price",
+              "entity":"stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "show me the data of microsoft in the past few days",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+            "start":20,
+            "end":29,
+            "value":"MSFT",
+            "entity":"stock_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the historical open data of AAPL",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+            "start":36,
+            "end":40,
+            "value":"TSLA",
+            "entity":"stock_name"
+          },
+          {
+              "start":23,
+              "end":27,
+              "value":"open",
+              "entity":"stock_attri"
+          }
+        ]
+      },
+      {
+        "text": "give me the close data of microsoft",
+        "intent": "get_history_vague",
+        "entities": [
+          {
+              "start":12,
+              "end":17,
+              "value":"close",
+              "entity":"stock_attri"
+          },
+          {
+            "start":26,
+            "end":35,
+            "value":"MSFT",
+            "entity":"stock_name"
+          }
+        ]
+      },
+      {
+        "text": "open data from 2017-12-1 to 2018-1-15",
+        "intent": "get_period",
+        "entities": [
+          {
+              "start":1,
+              "end":4,
+              "value":"open",
+              "entity":"stock_attri"
+          },
+          {
+            "start":15,
+            "end":24,
+            "value":"2017-12-1",
+            "entity":"start_date"
+          },
+          {
+            "start":28,
+            "end":37,
+            "value":"2018-1-15",
+            "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "open and close data from 2017-12-1 to 2018-1-15",
+        "intent": "get_period",
+        "entities": [
+          {
+              "start":0,
+              "end":4,
+              "value":"open",
+              "entity":"stock_attri"
+          },
+          {
+            "start":9,
+            "end":14,
+            "value":"close",
+            "entity":"stock_attri"
+          },
+          {
+            "start":25,
+            "end":33,
+            "value":"2017-12-1",
+            "entity":"start_date"
+          },
+          {
+            "start":38,
+            "end":45,
+            "value":"2018-1-15",
+            "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "from 2019-1-2 to 2019-2-3",
+        "intent": "get_period",
+        "entities": [
+          {
+            "start":5,
+            "end":13,
+            "value":"2019-1-2",
+            "entity":"start_date"
+          },
+          {
+            "start":17,
+            "end":25,
+            "value":"2019-2-3",
+            "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "from 2017-12-1 to 2018-1-15",
+        "intent": "get_period",
+        "entities": [
+          {
+            "start":5,
+            "end":14,
+            "value":"2017-12-1",
+            "entity":"start_date"
+          },
+          {
+            "start":18,
+            "end":27,
+            "value":"2018-1-15",
+            "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "from 2018-10-6 to 2018-12-25",
+        "intent": "get_period",
+        "entities": [
+          {
+            "start":5,
+            "end":14,
+            "value":"2018-10-6",
+            "entity":"start_date"
+          },
+          {
+            "start":18,
+            "end":28,
+            "value":"2018-12-25",
+            "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "from Apr 12 2018 to Jan 10 2019",
+        "intent": "get_period",
+        "entities": [
+          {
+            "start":5,
+            "end":16,
+            "value":"2018-4-12",
+            "entity":"start_date"
+          },
+          {
+            "start":20,
+            "end":31,
+            "value":"2019-1-10",
+            "entity":"end_date"
+          }
+        ]
+      },
+      {
+        "text": "from May 1 2018 to Dec 31 2018",
+        "intent": "get_period",
+        "entities": [
+          {
+            "start":5,
+            "end":15,
+            "value":"2018-5-1",
+            "entity":"start_date"
+          },
+          {
+            "start":19,
+            "end":30,
+            "value":"2018-12-31",
+            "entity":"end_date"
+          }
+        ]
+      }
+    ]
+  }
+}
