@@ -4,7 +4,7 @@ This is a Chatbot project by Yutai Li to help clients with stock information.
 
 ## Snapshot
 
-[![snapshot](Screenshot.png)] "snapshot")
+[![snapshot](https://github.com/whipround/Chatbot/blob/master/SnapShot.png)] "snapshot")
 
 ## Introduction
 
